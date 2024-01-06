@@ -1,0 +1,8 @@
+<div #editor></div>
+
+<button (click)="saveContent()">
+Save
+</button>
+<!-- Add these elements to your template to display messages -->
+<div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
